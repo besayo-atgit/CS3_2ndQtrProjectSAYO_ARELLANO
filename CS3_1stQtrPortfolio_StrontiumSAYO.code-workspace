@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../quarter 1/CS3_1stQtrPortfolio_StrontiumSAYO"
+		},
+		{
+			"name": "CS3_2ndQuarterRepo",
+			"path": "../CS3_2ndQuarterRepo"
+		},
+		{
+			"name": "CS3_2ndQtrProjectSAYO_ARELLANO",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "CS3_2ndQtrProjectSAYO_ARELLANO"
+	}
+}

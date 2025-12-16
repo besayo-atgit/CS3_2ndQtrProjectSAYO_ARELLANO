@@ -3,28 +3,95 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tusok For Thought</title>
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     </head>
     <body>
-        <span class = "topTitle">Tusok for Thought</span>
+      <span class = "top">Tusok for Thought</span>
+      <nav>
+        <div class = "bar">
+        <ul>
+            <a href="stemPage.html"><li>STEM</li></a>
+            <a href="hummsPage.html"><li>HUMMS</li></a>
+            <a href="infoPage.html"><li>INFO</li></a>
+            <a href="morePage.html"><li>MORE</li></a>
+        </ul>
+      </div>
+      </nav>
         <marquee scrollamount="50"><div class = "ribbonbg">tidbits of info</div></marquee>
-
+        <div class = "ourM">
         <h2> OUR MISSION </h2>
 
         <h3>
             Here at tusok for thought, we aim to show how useful science and humanities are in the modern world. Below is a carousel of flashcards, each with information on the field of science you want. For a more in depth look, click each flashcard and it will take you to a more in depth explanation of each science's ins, outs, and uses in the modern world.
 
         </h3>
+        </div>
+
+        <div class = "slide">
+
+              <div class="mySlides">
+                 <img src="/assets/1.png" style="width:50%">
+                 <div class="text">Caption Text</div>
+              </div>
+
+              
+              <div class="mySlides">
+                 <img src="/assets/2.png" style="width:50%">
+                 <div class="text">Caption Text</div>
+              </div>
 
 
-        <h1>
-            carousel thing
-        </h1>
+              <div class="mySlides">
+                 <img src="/assets/3.png" style="width:50%">
+                 <div class="text">Caption Text</div>
+              </div>
 
+              
+              <div class="mySlides">
+                 <img src="/assets/4.png" style="width:50%">
+                 <div class="text">Caption Text</div>
+              </div>
 
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
     </body>
     <footer>
-
+        <p>Copyright TA Arellano and BE Sayo 2025</p>
     </footer>
 </html>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>

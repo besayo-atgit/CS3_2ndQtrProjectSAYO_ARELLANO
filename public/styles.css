@@ -4,19 +4,35 @@ body {
     background-size: auto;
 }
 
-.topTitle {
+.top {
     padding: 15px;
     border-radius: 10px;
 
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 250;
+    font-weight: 900;
     
     color: coral;
     background-color: darkcyan;
-    filter: drop-shadow(-10px 10px 10px black);
 
-    
+
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.bar {
+  color: darkgreen;
+  background-color:skyblue;
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 40px;
+  border-radius: 10px;
+  text-align: center;
+  word-spacing:120px;
 }
 
 .ribbonbg {
@@ -27,4 +43,58 @@ body {
     filter: blur(10px);
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
+}
+
+.ourM {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: rgb(239, 69, 69);
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides
+{
+  margin-left: 500px;
+}
+
+footer {
+  color: white;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: auto;
+  margin-top: 500px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+  justify-content: center;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }

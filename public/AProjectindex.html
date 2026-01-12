@@ -7,64 +7,68 @@
         <title>Tusok For Thought</title>
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     </head>
+    
     <body>
-      <span class = "top">Tusok for Thought</span>
       <nav>
-        <div class = "bar">
-        <ul>
-            <a href="stemPage.html"><li>STEM</li></a>
-            <a href="hummsPage.html"><li>HUMMS</li></a>
-            <a href="infoPage.html"><li>INFO</li></a>
-            <a href="morePage.html"><li>MORE</li></a>
-        </ul>
-      </div>
+        <span class = "bar">
+          <ul>
+            <li><div class = "title">Tusok for Thought</div></li>
+              <a href="stemPage.html"><li>STEM</li></a>
+              <a href="hummsPage.html"><li>HUMMS</li></a>
+              <a href="infoPage.html"><li>INFO</li></a>
+              <a href="morePage.html"><li>MORE</li></a>
+          </ul>
+        </span>
       </nav>
-        <marquee scrollamount="50"><div class = "ribbonbg">tidbits of info</div></marquee>
-        <div class = "ourM">
-        <h2> OUR MISSION </h2>
 
+      <div class = "ourM">
+        <h2> OUR MISSION </h2>
         <h3>
             Here at tusok for thought, we aim to show how useful science and humanities are in the modern world. Below is a carousel of flashcards, each with information on the field of science you want. For a more in depth look, click each flashcard and it will take you to a more in depth explanation of each science's ins, outs, and uses in the modern world.
-
         </h3>
-        </div>
+      </div>
+
+      <marquee scrollamount="50"><div class = "ribbonbg">tidbits of info</div></marquee>
 
         <div class = "slide">
 
               <div class="mySlides">
-              <a href="CardsAstro.html">
-                 <img src="/assets/1.png" style="width:50%">
-              </a>
+                <a href="CardsAstro.html">
+                 <img src="/assets/1.png" style="width: 80%; margin-left: 200px;">
+                </a>
               </div>
 
-              
               <div class="mySlides">
                 <a href="CardsPhys.html">
-                 <img src="/assets/2.png" style="width:50%">
-                 </a>
+                 <img src="/assets/2.png" style="width: 80%; margin-left: 200px;">
+                </a>
               </div>
-
 
               <div class="mySlides">
                 <a href="CardsChem.html">
-                 <img src="/assets/3.png" style="width:50%">
-                 </a>
+                 <img src="/assets/3.png" style="width: 80%; margin-left: 200px;">
+                </a>
               </div>
 
-              
               <div class="mySlides">
                 <a href="CardsBio.html">
-                 <img src="/assets/4.png" style="width:50%">
-                 </a>
+                 <img src="/assets/4.png" style="width: 80%; margin-left: 200px;">
+                </a>
               </div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+          <span id="slideArrow">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </span>
+
+        </div>
+
     </body>
+
     <footer>
-        <p>Copyright TA Arellano and BE Sayo 2025</p>
+        <p>Copyright TA Arellano and BE Sayo 2025 - 2026 © Tusok for Thought ™</p>
     </footer>
+
 </html>
 
 <script>
@@ -96,6 +100,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-
 </script>

@@ -58,6 +58,20 @@ function sub()
     
     else 
     {
+
+        let pages = [];
+
+        let content = {
+            email: document.getElementById("email").value,
+            kalye: document.getElementById("kalye").value,
+            tags: document.getElementById("tags").value,
+            stuff: document.getElementById("stuff").value
+        };
+
+        pages.push(content);
+
+        //send to server
+
         alert("Your entry has been submitted!");
     }
 }

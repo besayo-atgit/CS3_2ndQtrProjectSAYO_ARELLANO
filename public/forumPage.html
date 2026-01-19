@@ -20,12 +20,12 @@
       <nav>
 <label for="kalye">Choose a Kalye:</label>
 
-<select name="kalye" id="kalye">
-  <option value="k1">Computer Science</option>
-  <option value="k2">Chemistry</option>
-  <option value="k3">Biology</option>
-  <option value="k4">Mathematics</option>
-  <option value="k5">Physics</option>
+<select onchange="handleDropdown(this.value)">
+  <option value="KalyeCS.html">Computer Science</option>
+  <option value="KalyeChem.html">Chemistry</option>
+  <option value="KalyeBio.html">Biology</option>
+  <option value="KalyeMath.html">Mathematics</option>
+  <option value="KalyePhys.html">Physics</option>
   //make it go to the page
 </select><br>
 
@@ -42,3 +42,11 @@
 
 
 </html>
+
+<script>
+function handleDropdown(url) {
+  if (url) {
+    window.location.href = url;
+  }
+}
+</script>

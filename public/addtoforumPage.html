@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <div class = "titleBG">
+        <div class = "titleTab">
+            <h1>
+                ADD FORUM ENTRY
+            </h1>
+
+
+            <form onsubmit="sub()">
+            <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="stuff">Text</label><br>
+    <textarea id="stuff" name="stuff" rows="10" cols="50"></textarea><br>
+
+<input type="submit">
+</form>
+        </div>
+         <p>
+                
+        </p>
+
+    </div>
+    </div>
+</html>
+
+<script>
+
+function sub()
+{
+    if( document.getElementById("email").value == "" || document.getElementById("stuff").value == "" )
+    {
+        alert("Please fill in all fields.");
+        return false;
+    }
+    
+    else 
+    {
+        alert("Your entry has been submitted!");
+    }
+}
+
+</script>

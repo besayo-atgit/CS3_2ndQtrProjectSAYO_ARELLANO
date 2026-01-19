@@ -1,0 +1,9 @@
+body {
+    padding-top: 10px;
+    background-image: url(/assets/bg.png);
+    background-size: auto;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: Helvetica;
+
+}

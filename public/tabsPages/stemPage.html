@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="stylesStem.css">
+        <link rel="stylesheet" type="text/css" href="stylesTabs.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tusok For Thought</title>
@@ -17,7 +17,24 @@
                 STEM stands for Science, Technology, Engineering, and Mathematics. It is the foundation of the modern world, as most of our comforts come from it.
                 Science helps build our knowledge. Technology makes it real. Engineering tests if its possible. Mathematics acts as the foundation for all of these.
             </p>
+    </div>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/public/index.html">Homepage</a>
+        <a href="hummsPage.html">Humanities</a>
+        <a href="infoPage.html">Information</a>
+        <a href="morePage.html">More</a>
+        <a href="forumPage.html">Forum</a>
     </div>
-    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </html>

@@ -26,6 +26,7 @@ body {
 
 ul li {
   display: inline-block;
+  font-size: xx-large;
 }
 
 .bar {
@@ -36,7 +37,7 @@ ul li {
   font-size: 20px;
   border-radius: 10px;
   text-align: center;
-  word-spacing:120px;
+  word-spacing:75px;
 }
 
 

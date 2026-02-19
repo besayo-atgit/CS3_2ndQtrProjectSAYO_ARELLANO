@@ -2,12 +2,12 @@
   padding: 15px;
   border-radius: 10px;
 
-  font-size: 50px;
+  font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 250;
   font-weight: 900;
   
-  color: coral;
+  color: darkorange;
   background-color: darkcyan;
 }
 
@@ -16,6 +16,12 @@ body {
   background-size: auto;
   padding: 10px;
   justify-content: center;
+}
+
+.mainbg {
+  background-image: url('/assets/mainbg.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 ul li {
@@ -27,7 +33,7 @@ ul li {
   background-color:skyblue;
   font-weight: 700;
   font-family: monospace;
-  font-size: 40px;
+  font-size: 20px;
   border-radius: 10px;
   text-align: center;
   word-spacing:120px;
@@ -46,8 +52,8 @@ ul li {
 .ourM {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    color: coral;
-    background-color: skyblue;
+    color: orange;
+    background-color: lightblue;
     padding: 20px;
     border-radius: 10px;
 
